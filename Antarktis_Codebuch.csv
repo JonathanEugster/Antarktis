@@ -1,0 +1,69 @@
+Wert,Kommentar
+edgelist,Grundregel: Die Edgelist darf pro Spalte immer nur einen Wert enthalten. Bis auf die ID idealerweise numerisch codiert (als Zahl).
+from,"definiert den Sender in gerichteten Netzwerken. Entspricht ID in der Nodelist. Keine Sonderzeichen, nur ein Wort"
+to ,"definiert den Empfänger in ungerichteten Netzwerken. Entspricht ID in der Nodelist. Keine Sonderzeichen, etc. "
+death,"1 = überlebt, 2 = gestorben"
+team_1,"1=commander, 2=captain, 3=executive_commander (stellvertretender commander), 4=first_mate (erster offizier), 5=second_mate (zweiter offizier), 6=third_mate (dritter offizier), 7=scientist (Gruppe scientists), 8=artists (Gruppe Maler/Fotografen usw), 9=engineer (Gruppe engineers), 10=medicine (Gruppe medicine), 11=cook  (Gruppe cooks), 12=crewman (Gruppe Matrosen/crewmen), 13=animals(Gruppe Hundesitter/dogdriver), 14=ship (Gruppe Schiffbauer usw), 15=navigator, 16=steward"
+team_2,"gleich wie team_1; crewman: generelle Matrosen; ship = spezifischere Jobs wie Heizer, Carpenter etc"
+motivation,"1=politisch, 2=wissenschaftlich, 3=wirtschaftlich"
+,
+nodelist,Grundregel: die IDs der Nodelist müssen mit den IDs der Edgelist komplett übereinstimmen. Ausprägungen der Attribute in der Regel numerisch definieren.
+id,"eindeutige Identifikation jedes einzelnen Knotens; je die ersten 3 Buchstaben von Vor- und Nachname; für Expeditionen:Nummerierung laut Expeditions-Liste, für Sponsoren laut Liste unten (ergänzen!), sonderbuchstaben wie ø, ä, etc in o, ae, usw umwandeln; Adelstitel o.ä. (van, de, von) weglassen und mit dem eigentlichen Nachnamen weitermachen"
+name,Name oder Bezeichnung des Knotens. 
+type,"Expedition oder Mensch? (1 = Mensch, 2 = Expedition, 3=Sponsor)"
+sex,"Geschlecht (1 = männlich, 2 = weiblich, 3 = divers)"
+country,"Bestimmt, aus welchem Land eine Person oder Expedition kommt. Da es werden Kürzel wie, uk und nor verwendet, müssen einheitlich sein! Nach ISO-3166 Alpha 2 ( https://de.wikipedia.org/wiki/ISO-3166-1-Kodierliste )"
+year,In welchem Jahr startete die Expedition?
+success,"Wurde das Ziel der Expedition erreicht? (1 = ja, 2 = nein)"
+duration,Dauer der Expedition in Monaten
+,
+Expeditionenliste,
+,
+a,Belgica-Expedition
+b,Southern Cross
+c,Discovery
+d,Gauß
+e,Schwedische
+f,Scottish National Antarctic Expedition
+g,Vierte Französische Antarktisexpedition
+h,Nimrod-Expedition
+i,Fünfte Französische Antarktisexpedition
+j,Japanische Antarktisexpedition
+k,Amundsens Fram-Expedition
+l,Terra Nova
+m,Zweite Deutsche Antarktisexpedition
+n,Australasiatische Expedition (Aurora)
+o,Endurance
+p,Ross Sea Party
+q,Quest- bzw Shackleton-Rowett Expedition
+,
+Sponsoren,
+beroy,Belgisches Königshaus
+brgov,Britische Regierung
+llelon,Llewellyn W. Longstaff
+rgs,Royal Geographical Society
+alfhar,"Alfred Harmsworth, später Lord Northcliffe"
+frasta,Französischer Staat
+edosim,Édouard-Étienne-Auguste Simon
+stor,Storting (Norwegisches Parlament)
+normar,Norwegische Marine
+norroy,Norwegisches Königspaar
+petchr,Peter Christophersen
+prispe,private Spenden 
+offlot,öffentliche Lotterie (Deutsch)
+geremp,Deutsches Kaiserreich
+duddoc,Dudley Docker (Birmingham Small Arms Company)
+jastwi,Janet Stancomb-Wills (Tabakerin)
+jamcai,Sir James Caird
+ausgon,australische Gönner
+wilbea,William Beardmore
+edwgui,"Edward Guinness, 1. Earl of Iveagh"
+ausgov,Australische Regierung
+neugov,Neuseeländische Regierung
+ottnor,Otto Nordenskjöld
+wilbru,William Speirs Bruce
+hankam,Handelskammer
+kred,Kredite
+brispe,Britische Spenden
+ausbure,Australische Bundesregierung
+ausbusta,Australische Bundesstaatenregierungen
